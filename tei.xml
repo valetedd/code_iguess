@@ -1,0 +1,26 @@
+<TEI xlmns = "http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Bohemian Rapsody: lyrics in digital format</title>
+                <author>Queen(The)</author>
+                <respStmt>
+                    <resp>compiled by<name>Valentino Castagna</name></resp>
+                </respStmt>
+            </titleStmt>
+            <editionStmt n = "1">Private edition<date>November 2023</date>
+                <respStmt>
+                    <resp>Annoteted by<name>Valentino Castagna</name></resp>
+                </respStmt>
+            </editionStmt>
+            <sourceDesc>
+                <bibl>
+                    <title level = "a">Bohemian Rapsody</title>. In
+                    <author>Queen</author>
+                    <title level = "b">A Night at the Opera</title>
+                    <date>1975</date>
+                </bibl>
+            </sourceDesc>
+        </fileDesc>    
+    </teiHeader>
+</TEI>
