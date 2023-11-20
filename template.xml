@@ -12,7 +12,8 @@
             <publicationStmt> 
                 <publisher> </publisher>
             </publicationStmt>
-            <sourceDesc> 
+            <sourceDesc>
+                <bibl></bibl>
             </sourceDesc>
         </fileDesc>
     </teiHeader>

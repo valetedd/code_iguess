@@ -177,8 +177,8 @@ def no_repetition_substring(string):
     
 
 
-
-##tests
+"""
+#tests
 print(test_no_repetition_substring(" ", 1))
 print(test_no_repetition_substring("a", 1))
 print(test_no_repetition_substring("abcdcp", 4))
@@ -186,3 +186,50 @@ print(test_no_repetition_substring("abcdefg", 7))
 print(test_no_repetition_substring("frzfhjgpor", 8))
 print(test_no_repetition_substring(" sptzu mp lw", 7))
 print(test_no_repetition_substring("abcafgh", 6))
+"""
+#####################################
+#Ex 1 Recursion
+
+def test_exponentiation(base_number, exponent, expected):
+    if exponentiation(base_number, exponent) == expected:
+        return True
+    else:
+        return False
+
+def exponentiation(base_number, exponent):
+    if exponent == 0:
+        return 1
+    else: 
+        return base_number * exponentiation(base_number, exponent - 1)
+
+"""
+print(test_exponentiation(3, 4, 81))
+print(test_exponentiation(17, 1, 17))
+print(test_exponentiation(2, 0, 1))
+"""
+##########################################
+# Ex 2 Recursion
+
+def test_fib(n, expected):
+    if fib(n) == expected:
+        return True
+    else: 
+        return False
+
+def fib(n):
+    if n <= 0:
+        return 0
+    elif n == 1:
+        return 1
+    else:
+        return fib(n - 1) + fib(n - 2)
+"""    
+# tests
+print(test_fib(1, 1))
+print(test_fib(0, 0))
+print(test_fib(2, 1))
+print(test_fib(3, 2))
+print(test_fib(4, 3))
+print(test_fib(419, 1645645409178311156114050175340179094658577397657624573049761120640548215334513341070281))
+"""
+

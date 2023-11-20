@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model
+  href="https://vault.tei-c.org/P5/current/xml/tei/custom/schema/relaxng/tei_all.rng"
+  schematypens="http://relaxng.org/ns/structure/1.0"
+  type="application/xml"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Hallelujah</title>
+                <author>Leonard Cohen</author>
+                <respStmt>
+                    <resp>compiled by</resp>
+                    <name>Valentino Castagna</name>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition n = "1">Teddaccio editions<date>, November 2023</date></edition>
+                <respStmt>
+                    <resp>Annoteted by</resp>
+                    <name>Valentino Castagna</name>
+                </respStmt>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>Me, myself and I</publisher>
+                <pubPlace>Bologna</pubPlace>
+                <availability><p>Open Access</p></availability>
+            </publicationStmt>
+            <sourceDesc>    
+                <bibl>
+                    <title level = "a">Hallelujah</title>
+                    <author>Leonard Cohen</author>.
+                    From <title level="m">"Various POsitions"</title>
+                    <date>(1984)</date>
+                </bibl>
+            </sourceDesc>
+        </fileDesc>    
+    </teiHeader>
+    <text> 
+        <body>
+            <head>HALLELUJAH</head>
+                   
+                <lg>
+                    <l></l>
+                </lg>
+
+                <lg>
+                    <l></l>
+                </lg>
+
+                <lg>
+                    <l></l>
+                </lg>          
+                           
+                <lg>
+                    
+                    <l></l>
+                </lg>
+                
+                <lg>
+                    <l></l>
+                </lg>
+                
+                <lg>
+                    <l></l>
+                </lg>
+        </body>
+            
+    </text>
+</TEI>
