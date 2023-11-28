@@ -7,7 +7,7 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Hallelujah</title>
+                <title>Hallelujah: a critical digital edition</title>
                 <author>Leonard Cohen</author>
                 <respStmt>
                     <resp>compiled by</resp>
@@ -29,40 +29,189 @@
             <sourceDesc>    
                 <bibl>
                     <title level = "a">Hallelujah</title>
-                    <author>Leonard Cohen</author>.
-                    From <title level="m">"Various POsitions"</title>
-                    <date>(1984)</date>
+                    Written by<author>Leonard Cohen</author>.
+                    From <title level="m">"Various POsitions"</title><date>(1984)</date>
                 </bibl>
+                <listWit>
+                    <witness xml:id="Lc84"/>
+                    <witness xml:id="Lc88"/>
+                    <witness xml:id="Jb94"/>
+                    <witness xml:id="Ab08"/>
+                </listWit>
             </sourceDesc>
         </fileDesc>    
+        <encodingDesc>
+            <variantEncoding method="parallel-segmentation" location="internal"></variantEncoding>
+        </encodingDesc>
     </teiHeader>
     <text> 
         <body>
             <head>HALLELUJAH</head>
-                   
-                <lg>
-                    <l></l>
-                </lg>
+                <app>       
+                <lem wit="#Lc84"><lg type="verse" n="1">
+                    <l>Now I've heard there was a secret chord</l>        
+                    <l>That David played and it pleased the Lord</l>
+                    <l>But you don't really care for music, do ya?</l>
+                    <l>It goes like this, the fourth, the fifth</l>
+                    <l>The minor fall, the major lift</l>
+                    <l>The baffled king composing "Hallelujah"</l>
+                    </lg></lem>
 
-                <lg>
-                    <l></l>
-                </lg>
+                    <rdg wit="#Lc88">
+                        <lg type="verse" n="1">
+                        <l>Baby, I've been here before</l>
+                        <l>I know this room, I've walked this floor</l>
+                        <l>I used to live alone before I knew you</l>
+                        <l>And I've seen your flag on the marble arch</l>
+                        <l>Love is not a victory march</l>
+                        <l>It's a cold and it's a broken Hallelujah</l>
+                        </lg>
+                    </rdg>  
+                    <rdg wit="#Jb94">
+                            <l>Well I've heard there was a secret chord</l> 
+                    </rdg>
+                    <rdg wit="#Ab08"></rdg>   
+                </app>
+                
 
-                <lg>
-                    <l></l>
-                </lg>          
-                           
-                <lg>
+                <lg type="chorus" n="1">
+                    <l>Hallelujah, Hallelujah</l>
+                    <l>Hallelujah, Hallelujah</l>
+                </lg>
+                
+                <app>
+                <lem wit="#Lc84"><lg type="verse" n="2">
+                    <l>Your faith was strong, but you needed proof</l>
+                    <l>You saw her bathing on the roof</l>
+                    <l>Her beauty in the moonlight overthrew ya</l>
+                    <l>She tied you to a kitchen chair</l>
+                    <l>She broke your throne and she cut your hair</l>
+                    <l>And from your lips she drew the Hallelujah</l>                      
+                </lg></lem>          
+                
                     
-                    <l></l>
+                    <rdg wit="#Lc88">
+                        <lg type="verse" n="2">
+                        <l>There was a time you let me know</l>
+                        <l>What's really going on below</l>
+                        <l>But now you never show it to me, do you?</l>
+                        <l>And remember when I moved in you</l>
+                        <l>The holy dove was moving too</l>
+                        <l>And every breath we drew was Hallelujah</l>
+                        </lg>
+                    </rdg>
+
+                    <rdg wit="#Jb94">
+                        <l>Well, your faith was strong but you needed proof</l>
+                        ...
+                        <l>And she tied you to her kitchen chair</l>
+                        <l>And she broke your throne and she cut your hair</l>
+                        ...
+                    </rdg>                     
+                  
+                <rdg wit="#Ab08"></rdg>     
+                </app>
+
+                <lg type="chorus" n="2">
+                    <l>Hallelujah, Hallelujah</l>
+                    <l>Hallelujah, Hallelujah</l>
                 </lg>
                 
-                <lg>
-                    <l></l>
-                </lg>
                 
-                <lg>
-                    <l></l>
+                <app>
+                <lem wit="#Lc84"><lg type="verse" n="3">
+                <l>You say I took the name in vain</l>
+                <l>I don't even know the name</l>
+                <l>But if I did, well, really, what's it to ya?</l>
+                <l>There's a blaze of light in every word</l>
+                <l>It doesn't matter which you heard</l>
+                <l>The holy or the broken Hallelujah</l>                        
+                </lg></lem>
+                    <rdg wit="#Lc88">
+                        <lg type="verse" n="3">
+                        <l>Maybe there's a God above</l>
+                        <l>But all I've ever learned from love</l>
+                        <l>Was how to shoot at someone who outdrew you</l>
+                        <l>And it's not a cry that you hear at night</l>
+                        <l>It's not somebody who's seen the light</l>
+                        <l>It's a cold and it's a broken Hallelujah</l>    
+                        </lg>                            
+                    </rdg>                        
+                    <rdg wit="#Jb94">
+                        <lg type="verse" n="3">
+                        <l>Well baby I've been here before</l>
+                        <l>I've seen this room and I've walked this floor</l>
+                        <l>You know, I used to live alone before I knew you</l>
+                        <l>And I've seen your flag on the marble arch</l>
+                        <l>And love is not a victory march</l>
+                        <l>It's a cold and it's a broken Hallelujah</l>
+                        </lg>
+                    </rdg>                        
+                    <rdg wit="#Ab08"></rdg>                        
+                </app>
+                
+                       
+                <lg type="chorus" n="3">
+                    <l>Hallelujah, Hallelujah</l>
+                    <l>Hallelujah, Hallelujah</l>
+                </lg>
+
+                <app>
+                <lem><lg type="verse" n="4">
+                <l>I did my best, it wasn't much</l>
+                <l>I couldn't feel, so I tried to touch</l>
+                <l>I've told the truth, I didn't come to fool ya</l>
+                <l>And even though it all went wrong</l>
+                <l>I'll stand before the lord of song</l>
+                <l>With nothing on my tongue but hallelujah</l>
+                </lg></lem>                         
+                    <rdg wit="#Jb94">
+                        <lg type="verse" n="4">
+                        <l>Well there was a time when you let me know</l>
+                        <l>What's really going on below</l>
+                        <l>But now you never show it to me, do you?</l>
+                        <l>But remember when I moved in you</l>
+                        <l>And the holy dove was moving too</l>
+                        <l>And every breath we drew was Hallelujah</l>
+                        </lg>
+                    </rdg>                          
+                    <rdg wit="#Lc88"></rdg>                          
+                </app>
+
+                
+                <app>
+                    <rdg wit="#Lc84">
+                        <lg type="chorus" n="4">
+                            <l>Hallelujah, Hallelujah</l>
+                            <l>Hallelujah, Hallelujah</l>
+                            <l>Hallelujah, Hallelujah</l>
+                            <l>Hallelujah, Hallelujah</l>
+                            <l>Hallelujah, Hallelujah</l>
+                            <l>Hallelujah, Hallelujah</l>
+                            <l>Hallelujah, Hallelujah</l>
+                            <l>Hallelujah, Hallelujah</l>
+                            <l>Hallelujah, Hallelujah</l>
+                        </lg>
+                    </rdg>
+                    <rdg wit="#Jb94">
+                        <lg type="chorus" n="4">
+                        <l>Hallelujah, Hallelujah</l>
+                        <l>Hallelujah, Hallelujah</l>
+                        </lg>
+
+                        <lg type="verse" n="5">
+                        <l>Maybe there's a God above</l>
+                        <l>But all I've ever learned from love</l>
+                        <l>Was how to shoot at someone who outdrew you</l>
+                        <l>And it's not a cry that you hear at night</l>
+                        <l>It's not somebody who's seen the light</l>
+                        <l>It's a cold and it's a broken Hallelujah</l>    
+                        </lg>                          
+                    </rdg>
+                </app>
+
+                <lg type="outro">
+                    <l>Hallelujah, Hallelujah</l>
                 </lg>
         </body>
             

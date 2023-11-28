@@ -1,4 +1,4 @@
-### lesson 2 ex 1
+### lesson 2 ex 1 ###
 
 def is_friend_of_harry(friend):
     friend_norm = friend.strip().lower().capitalize()
@@ -33,7 +33,7 @@ def is_prof_friend_of_harry(prof):
 
 
 
-### lesson 2 ex 2
+### lesson 2 ex 2 ###
 
 scores = [0,0,0,0]
 houses = ["Gryffindor", "Hufflepuff", "Ravenclaw", "Slytherin"]
@@ -52,7 +52,7 @@ def update_eval(house_name, action, points):
     return scores
 
 
-### lesson 3 ex 1
+### lesson 3 ex 1 ###
 
 ctp_lessons = ["Introduction to the course","Introduction to Computational Thinking","Algorithms","Laboratory","Computability","Programming languages","Organising information: ordered structures","Laboratory","Brute-force algorithms","Laboratory","Organising information: unordered structures","Laboratory","Recursion","Laboratory","Divide and conquer algorithms","Laboratory","Dynamic programming algorithms","Organising information: trees","Backtracking algorithms","Organising information: graphs","Greedy algorithms"]
 
@@ -75,7 +75,7 @@ def all_before_lab(list_lessons):
         
     return lessons_before_lab
 
-print(all_before_lab(ctp_lessons))
+#print(all_before_lab(ctp_lessons))
 
 ## 1(c)
 
@@ -90,7 +90,43 @@ def max_lessons_hours(list_tuple_lessons, max_hours):
             sum_of_hours += tuple[0]
     return result
 
-print(max_lessons_hours(ctp_lessons_extended, 30))
+#print(max_lessons_hours(ctp_lessons_extended, 30))
+
+### lesson 4 ex. 1 ###
+
+song = "well i’m so above you ;; and it’s plain to see ;; but i came to love you anyway ;; so you pulled my heart out ;; and i don’t mind bleeding ;; any old time you keep me waiting ;; waiting, waiting ;; oh, oh-oh i got a love that keeps me waiting ;; oh, oh-oh i got a love that keeps me waiting ;; i’m a lonely boy ;; i’m a lonely boy ;; oh, oh-oh i got a love that keeps me waiting ;; well your mama kept you but your daddy left you ;; and i should’ve done you just the same ;; but i came to love you ;; am i born to bleed? ;; any old time you keep me waiting ;; waiting, waiting ;; oh, oh-oh i got a love that keeps me waiting ;; oh, oh-oh i got a love that keeps me waiting ;; i’m a lonely boy ;; i’m a lonely boy ;; oh, oh-oh i got a love that keeps me waiting ;; hey! ;; oh, oh-oh i got a love that keeps me waiting ;; oh, oh-oh i got a love that keeps me waiting ;; i’m a lonely boy ;; i’m a lonely boy ;; oh, oh-oh i got a love that keeps me waiting"
+
+def clean_lyrics(lyrics):
+    lyrics_split = lyrics.split(" ")
+    lyrics_set = set(lyrics_split)
+    exclusion_set = set(['a', 'i', 'am', 'to', ';;', 'the', 'you', 'don’t', 'and', 'that', 'i’m', 'it’s'])
+    return lyrics_set.difference(exclusion_set) # the argument of .difference can also be an iterator, so no set-conversion needed
+clean_set = clean_lyrics(song)
+print(clean_set)
+
+
+def family_words(lyrics):
+    family_set = set(["mama","daddy","sister","brother","boy","girl"])
+    return len(lyrics.intersection(family_set))
+
+print(family_words(clean_set))
+
+lyrics_split = song.split(" ")
+
+def count_words(lyrics):
+    dict = {}
+    for element in clean_set:
+        counter = 0
+        for i in lyrics:
+            if i == element:
+                counter += 1
+                dict[element] = counter
+    return dict
+
+print(count_words(lyrics_split))
+        
+
+    
 
 
 

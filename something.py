@@ -1,4 +1,3 @@
-
 ### Exercise x functions
 # test function for the algorithm
 
@@ -173,7 +172,7 @@ def test_no_repetition_substring(string, expected):
 
 
 def no_repetition_substring(string):
-     return None 
+    pass
     
 
 
@@ -199,9 +198,11 @@ def test_exponentiation(base_number, exponent, expected):
 def exponentiation(base_number, exponent):
     if exponent == 0:
         return 1
+    elif exponent == 1:
+        return base_number
     else: 
         return base_number * exponentiation(base_number, exponent - 1)
-
+    
 """
 print(test_exponentiation(3, 4, 81))
 print(test_exponentiation(17, 1, 17))
