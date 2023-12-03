@@ -102,14 +102,14 @@ def clean_lyrics(lyrics):
     exclusion_set = set(['a', 'i', 'am', 'to', ';;', 'the', 'you', 'don’t', 'and', 'that', 'i’m', 'it’s'])
     return lyrics_set.difference(exclusion_set) # the argument of .difference can also be an iterator, so no set-conversion needed
 clean_set = clean_lyrics(song)
-print(clean_set)
+#print(clean_set)
 
 
 def family_words(lyrics):
     family_set = set(["mama","daddy","sister","brother","boy","girl"])
     return len(lyrics.intersection(family_set))
 
-print(family_words(clean_set))
+#print(family_words(clean_set))
 
 lyrics_split = song.split(" ")
 
@@ -123,8 +123,22 @@ def count_words(lyrics):
                 dict[element] = counter
     return dict
 
-print(count_words(lyrics_split))
-        
+#print(count_words(lyrics_split))
+
+
+playlist_txt = "el camino::lonely boy ;; el camino::little black submarine ;; el camino::gold on the ceiling ;; turn blue::fever ;; turn blue::gotta get away ;; brothers::howlin for you ;; brothers::tighten up ;; turn blue::it is up to you now"
+
+def build_playlist_dict(playlist):
+    first_clean = playlist_txt.split(" ;; ")
+    album_dict = {}
+    for i in first_clean:
+        clean_i = i.split("::")
+        tuple = (clean_i[0], clean_i[1])
+            
+
+
+print(build_playlist_dict(playlist_txt))
+
 
     
 

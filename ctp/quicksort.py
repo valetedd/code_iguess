@@ -44,5 +44,5 @@ print(test_quicksort(["The Graveyard Book", "Coraline", "Neverwhere", "Good Omen
 print(test_quicksort(["The Graveyard Book", "Coraline", "Neverwhere", "Good Omens", "American Gods"], 0, 4, ['American Gods', 'Coraline', 'Good Omens', 'Neverwhere', 'The Graveyard Book']))
 print(test_quicksort(['Coraline', 'Coraline', 'The Graveyard Book', 'American Gods', 'Good Omens', 'Neverwhere'], 0, 4, ['American Gods', 'Coraline', 'Coraline', 'Good Omens', 'The Graveyard Book', 'Neverwhere']))
 print(test_quicksort(['Coraline', 'Coraline', 'The Graveyard Book', 'American Gods', 'Good Omens', 'Neverwhere'], 0, 5, ['American Gods', 'Coraline', 'Coraline', 'Good Omens', 'Neverwhere', 'The Graveyard Book']))
-
+print(test_quicksort([1,-2, 9, 7, 5, 1, 11], 1, 6, [1, -2, 1, 5, 7, 9, 11]))
 
