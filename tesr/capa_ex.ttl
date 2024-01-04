@@ -1,0 +1,24 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf_schema#>.
+@prefix dbr: <http://www.dpedia.org/resource/>.
+@prefix dbo: <http://www.dbpedia.org/ontolgy/>.
+
+dbr: Robert_Capa a dbo: Person ;
+    rdfs: label "Robert Capa"@ga ;
+    dbo: birthLocation dbr: Hungary ; 
+    dbo: occupation dbr: Photographer ;
+    dbo: birthYear dbr: "1913" ; 
+    dbo: realName dbr: "Endre Ernö Friedman"@ga ;
+    dbo: isAuthorOf dbr: Photograph_A.
+    
+dbr: Photograph_A a dbo: WorkOfArt ;    
+    rdfs: label "Death of a loyalist soldier"@eng ;
+    dbo: takenWhere dbr: Spain ; 
+    dbo: takenWhen dbr: "1936" ;
+    dbo: depictedSubject dbr: Soldier.
+    dbo: subjectStatus dbr: Dying ;
+    dbo: depictionSetting dbr: Spanish_Civil_War.
+    
+    
+        
+
+

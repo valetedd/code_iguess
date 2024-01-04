@@ -233,4 +233,45 @@ print(test_fib(3, 2))
 print(test_fib(4, 3))
 print(test_fib(419, 1645645409178311156114050175340179094658577397657624573049761120640548215334513341070281))
 """
+### Ex. 30A CTP Book ###
 
+def test_odd11(y, expected):
+    result = odd11(y)
+    return result == expected
+
+def odd11(y):
+    if y % 2 != 0:
+        y += 11
+    y = y / 2
+    if y % 2 != 0:
+        y += 11
+    T = 7 - (T % 7)
+    return T
+
+### Ex. 29A CTP Book ###
+
+from random import randint
+from itertools import permutations
+
+def test_fy(s, exptected):
+    result = fy(s)
+    if result in exptected:
+        return True
+    else:
+        return False
+
+
+def fy(s):
+    char_list = list(s)
+    for i in range(len(char_list)-1):
+        c = char_list[i]
+        j = randint(i, len(char_list)-1)
+        c, char_list[j] = char_list[j], c
+    perm = "".join(char_list)
+    return perm
+
+    
+### Ex. 28A CTP Book ###
+
+
+        

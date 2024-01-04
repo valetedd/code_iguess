@@ -11,14 +11,15 @@ def is_friend_of_harry(friend):
     else:
         return False
 # 1(a)
-is_friend_of_harry("Bellatrix")
-is_friend_of_harry("Voldemort")
-is_friend_of_harry("Hagrid")
+#is_friend_of_harry("Bellatrix")
+#is_friend_of_harry("Voldemort")
+#is_friend_of_harry("Hagrid")
 # 1 (b)
-if is_friend_of_harry("Bellatrix") or is_friend_of_harry("Voldemort") or is_friend_of_harry("Hagrid"): 
-    print("Harry has friends!")
-else:
-    print("Harry has no friends")
+#if is_friend_of_harry("Bellatrix") or is_friend_of_harry("Voldemort") or is_friend_of_harry("Hagrid"): 
+#   print("Harry has friends!")
+#else:
+#    print("Harry has no friends")
+
 # 1 (d)
 def is_prof_friend_of_harry(prof):
     prof = prof.strip()
@@ -93,7 +94,7 @@ def max_lessons_hours(list_tuple_lessons, max_hours):
 #print(max_lessons_hours(ctp_lessons_extended, 30))
 
 ### lesson 4 ex. 1 ###
-
+# a
 song = "well i’m so above you ;; and it’s plain to see ;; but i came to love you anyway ;; so you pulled my heart out ;; and i don’t mind bleeding ;; any old time you keep me waiting ;; waiting, waiting ;; oh, oh-oh i got a love that keeps me waiting ;; oh, oh-oh i got a love that keeps me waiting ;; i’m a lonely boy ;; i’m a lonely boy ;; oh, oh-oh i got a love that keeps me waiting ;; well your mama kept you but your daddy left you ;; and i should’ve done you just the same ;; but i came to love you ;; am i born to bleed? ;; any old time you keep me waiting ;; waiting, waiting ;; oh, oh-oh i got a love that keeps me waiting ;; oh, oh-oh i got a love that keeps me waiting ;; i’m a lonely boy ;; i’m a lonely boy ;; oh, oh-oh i got a love that keeps me waiting ;; hey! ;; oh, oh-oh i got a love that keeps me waiting ;; oh, oh-oh i got a love that keeps me waiting ;; i’m a lonely boy ;; i’m a lonely boy ;; oh, oh-oh i got a love that keeps me waiting"
 
 def clean_lyrics(lyrics):
@@ -104,13 +105,14 @@ def clean_lyrics(lyrics):
 clean_set = clean_lyrics(song)
 #print(clean_set)
 
-
+# b
 def family_words(lyrics):
     family_set = set(["mama","daddy","sister","brother","boy","girl"])
     return len(lyrics.intersection(family_set))
 
 #print(family_words(clean_set))
 
+# c
 lyrics_split = song.split(" ")
 
 def count_words(lyrics):
@@ -125,22 +127,132 @@ def count_words(lyrics):
 
 #print(count_words(lyrics_split))
 
-
+# d
 playlist_txt = "el camino::lonely boy ;; el camino::little black submarine ;; el camino::gold on the ceiling ;; turn blue::fever ;; turn blue::gotta get away ;; brothers::howlin for you ;; brothers::tighten up ;; turn blue::it is up to you now"
 
 def build_playlist_dict(playlist):
-    first_clean = playlist_txt.split(" ;; ")
     album_dict = {}
-    for i in first_clean:
-        clean_i = i.split("::")
-        tuple = (clean_i[0], clean_i[1])
-            
+    for string in playlist_txt.split(" ;; "):
+        sublist = string.split("::")
+        if sublist[0] not in album_dict:
+            album_dict[sublist[0]] = [sublist[1]]
+        else:
+            (album_dict[sublist[0]]).append(sublist[1])
+    return album_dict
+
+#print(build_playlist_dict(playlist_txt))
+
+###ex. 2
+
+l_cards = ["Poliwag", "Pidgey", "Abra", "Pidgey", "Charmander", "Bulbasaur", "Charmander", "Psyduck", "Poliwag","Goldeen"]
+
+evolution_map = {
+    "Poliwag": "Poliwhirl",
+    "Bulbasaur": "Ivysaur",
+    "Charmander": "Charmeleon",
+    "Pidgey": "Pidgeotto",
+    "Psyduck": "Golduck",
+    "Abra": "Kadabra"
+}
+
+def pokemon_cards(card_list):
+    card_set = set()
+    result = list()
+    for card in card_list:
+        if card in card_set:
+            result.append(evolution_map[card])
+            result.remove(card)
+        else:
+            card_set.add(card)
+            result.append(card)
+    return result
+
+print(pokemon_cards(l_cards))
 
 
-print(build_playlist_dict(playlist_txt))
+def reverse_and_count(string):
+    reversed_string = string[::-1]
+    vow_count = 0
+    for char in string:
+        if char in "aeiou":
+            vow_count += 1
+    return reversed_string, vow_count
+
+def filter_long_words(sentence, length):
+    result = list()
+    sentence.split(" ")
+    for token in sentence:
+        if token > length:
+            token.append(result)
+    return result
+
+def combine_characters(string1, string2):
+    combined_string = ""
+    if len(string1) > len(string2):
+        longer = len(string1)
+    else:
+        longer = len(string2)
+
+    for i in range(longer):
+        if i <= len(string1) - 1:
+            combined_string += string1[i]
+        if i <= len(string2) - 1:
+            combined_string += string2[i]
+
+    return combined_string
+
+print(combine_characters("adfholopo", "traossderrvtsds"))
+
+def find_missing_combination(n1, n2, n3, combinations):
+    missing = set()
+    for digit_1 in range(n1+1):
+        for digit_2 in range(n2+1):
+            for digit_3 in range(n3+1):
+                current_tuple = (digit_1, digit_2, digit_3)
+                if current_tuple not in combinations:
+                    missing.add(current_tuple)
+    return missing
+
+def multiply_elements(number_list):
+    if 0 in number_list:
+        return 0
+    if len(number_list) == 1:
+        return number_list[0]
+    elif len(number_list) == 2:
+        return number_list[0] * number_list[1]
+    else:
+        mid_pos = len(number_list) // 2
+        return multiply_elements(number_list[0:mid_pos]) * multiply_elements(number_list[mid_pos:len(number_list)])
+    
+print(multiply_elements([2, 3, 6, 1]))
+print(multiply_elements([8, 9, 1, 0]))
+print(multiply_elements([10, 9, 3, 7]))
+print(multiply_elements([11, 2, 9, 7]))
+
+def find_max_element(number_list):
+    if len(number_list) == 1:
+        return number_list[0]
+    if len(number_list) == 2:
+        if number_list[0] >= number_list[1]:
+            return number_list[0]
+        else:
+            return number_list[1]
+    else:
+        mid_pos = len(number_list) // 2
+        if find_max_element(number_list[0:mid_pos]) >= find_max_element(number_list[mid_pos:len(number_list)]):
+            return find_max_element(number_list[0:mid_pos])
+        else:
+            return find_max_element(number_list[mid_pos:len(number_list)])
+        
+
+print(find_max_element([3, 6, 1, 8, 10, 24]))
+print(find_max_element([40, 56, 100, 409, 9]))
+    
+
 
 
     
+
 
 
 

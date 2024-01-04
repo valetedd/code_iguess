@@ -27,7 +27,7 @@ def test_quicksort(input_list, start, end, expected):
     
 def quicksort(input_list, start, end):
     piv_pos = partition(input_list, start, end, (end + start) // 2)
-    if 0 < len(range(start, end + 1)) < 3:
+    if 0 < end-start+1 < 3:
         return input_list
     else:
         if (piv_pos - 1) > start:
