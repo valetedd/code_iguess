@@ -273,5 +273,52 @@ def fy(s):
     
 ### Ex. 28A CTP Book ###
 
+def test_nearest(list_i, expected):
+    result = nearest(list_i)
+    return result == expected
 
-        
+
+def nearest(list_i):
+    l_o = list()
+    l_o.append(None)
+    indexes = range(1, len(list_i))
+    
+    for idx in indexes:
+        num = list_i[idx]
+        smaller_exists = False
+        rev_indexes = reversed(range(idx))
+        for p_idx in rev_indexes:
+            prev_num = list_i[p_idx]
+            if prev_num < num:
+                l_o.append(prev_num)
+                smaller_exists = True
+                break
+        if smaller_exists == False:
+            l_o.append(None)
+    print(l_o)
+    return l_o
+"""                     
+print(test_nearest([0, 8, 4, 12, 2, 10, 6, 14, 1], [None, 0, 0, 4, 0, 2, 2, 6, 0]))
+print(test_nearest([], []))
+print(test_nearest([7], [None]))
+print(test_nearest([7, 3], [None, None]))
+print(test_nearest([3, 7], [None, 3]))
+print(test_nearest([0, 8, 4, 12, 2, 10, 6, 14, 1], [None, 0, 0, 4, 0, 2, 2, 6, 0]))
+"""
+### Ex. 28A CTP Book ###
+from string import ascii_lowercase
+from random import choice
+
+def test_qgpm(s, t, expected):
+    result = qgpm(s, t)
+    return result == expected
+
+def qgpm(s, t):
+    s_set = set(s)
+    t_set = set(t)
+    Km = len(s_set.intersection(t_set))
+    return (2 * Km) / (len(s) + len(t))
+
+print(test_qgpm("ciao", "ciao", 1))
+print(test_qgpm("mummy", "my", 4 / 7))
+print(test_qgpm("m", "mummy", 2 / 6))
