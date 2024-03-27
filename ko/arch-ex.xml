@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE EAD PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd (Encoded Archival Description (EAD)
+Version 2002)//EN">
+<c level="founds">
+    <did>
+        <unitid>MS.M.020</unitid>
+        <unititle>Edward R. Frank stereograph collection</unititle>
+        <pyhsdesc>
+            <extent>1.2 Linear Feet</extent>
+            <genreform>3 boxes</genreform>
+        </pyhsdesc>
+        <unitdate type="inclusive">1877-1913</unitdate>
+        <unitdate type="bulk">1897-1910</unitdate>
+        <origination>
+            <corpname>Frank, Edward R. </corpname>
+        </origination>
+    </did>
+</c>

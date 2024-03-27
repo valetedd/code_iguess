@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record entity="text">
+    <book frbr="work" isbd-lvl="1">
+        <title>Twelfth Night</title>
+        <author>William Shakespeare</author>
+        <editor frbr="expression">J.C. Dent</editor>
+    </book>
+    <publication frbr="expression" isbd-lvl="3">
+            <place>Oxford</place>
+            <publisher>Oxford University Press</publisher>
+            <year>1987</year>
+            <note>The new Clarendon Shakespeare</note>
+            <id type="isbn">0198319207</id>      
+    </publication>
+    <materialdesc frbr="manifestation" isbd-lvl="4">
+        <pages>159 pp.</pages>
+        <dimension>17cm</dimension>  
+    </materialdesc>
+    <availability frbr="item">
+        <place>Ancona</place>
+        <institution>Biblioteca Comunale 'Benincasa'</institution>
+        <shelf>132096</shelf>
+        <collocation>TORRE LIBR 46 I 00254</collocation>
+    </availability>
+</record>
