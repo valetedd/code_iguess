@@ -38,8 +38,9 @@ Documenting the project's design and other meaningful info.
 
 :: Afghanistan {"position":"325,600","size":"100,100"}
 (print: "<img src='char/afghan.jpg'>")
-(print: "<img src='kingdig.jpg'>")
-(print: "<img src='bodhi.jpeg'>")
+(print: "<img src='img/kingdig.jpg'>")
+(print: "<img src='img/bodhi.jpeg'>")
+(print: "<img src='img.assault'>")
 I am Nefertiti, the illustrious queen of ancient Egypt. Today, I shall tell you about a precious stone that played a significant role in the ancient world: lapis lazuli.
 Lapis lazuli, with its deep, celestial blue, reminiscent of the night sky adorned with stars, has long been regarded as a symbol of divinity and power. This stone was highly treasured not only in our magnificent Egypt but also in the distant land of Babylon. Remarkably, the source of this revered stone lies in the faraway mountains of Afghanistan, a testament to its value and the extensive trade networks of ancient times.
 In ancient Mesopotamia, lapis lazuli was revered as a sacred gemstone, often used in religious rituals and court decorations. The Sumerians, Babylonians, and Assyrians all utilized lapis lazuli to create statues of gods and amulets. Archaeologists discovered numerous jewelry pieces and ornaments made from lapis lazuli in the royal tombs of Ur, showcasing our ancestors' love and reverence for this gemstone.
@@ -58,7 +59,7 @@ May the splendor of our Egypt and Babylon, like lapis lazuli, remain forever unf
 
 :: China {"position":"450,525","size":"100,100"}
 (print: "<img src='char/china.jpg'>")
-(print: "<img src='" + $uri + "'>")
+(print: "<img src='img/chinaBuddha.jpg'>")
 In China, ultramarine called "Buddhist Blue," symbolizing the sacred. This term reflects the deep reverence for lapis lazuli among the people of the Silk Road, where it was not just a gemstone but a conduit of cultural exchange and spiritual significance.I am  from the Tang Dynasty, hailing from Kucha in the Western Regions. This place is a crucial stop along the Silk Road and a significant hub for lapis lazuli. From the ancient mines of Badakhshan Province in Afghanistan, lapis lazuli traveled along the Silk Road and reached our city of Kucha.
 
 Here in Kucha, lapis lazuli is widely used in decorations and religious artifacts. In our place, statues and murals often use lapis lazuli powder to create that unique deep blue hue. This color symbolizes the divine and eternity, evoking tranquility and serenity during prayers and meditation. Monks in the temples carve the eyes of Buddha statues with lapis lazuli because we believe it imbues them with sacred power and wisdom.
@@ -174,8 +175,8 @@ Go to other pages:
 
 :: Iran {"position":"550,600","size":"100,100"}
 (print: "<img src='char/iran.jpg'>")
-(print: "<img src='" + $uri + "'>")
-(print: "<img src='" + $uri + "'>")
+(print: "<img src='img/mosque.jpg'>")
+(print: "<img src='img/battle.jpg'>")
 I am an Iranian . Lapis lazuli, this deep blue gemstone, holds significant importance in our history and culture. It is not only a beautiful adornment but also symbolizes power and divine representation. Before arriving in Iran, we have seen how the Egyptians and Mesopotamians revered lapis lazuli in the ancient world, and how Afghans and Chinese used this blue in sacred Buddhist caves and temples. Next, you will see how Muslims used and cherished this color in their own unique way.
 
  During the Persian Empire, lapis lazuli was widely used to decorate palaces and mosques. Our craftsmen polished lapis lazuli into exquisite gems, used for inlaying crowns, swords, and other precious items. In the palaces of Persepolis, the decoration with lapis lazuli made the architecture appear grand and majestic.
@@ -192,7 +193,8 @@ I hope through my narration, you can better understand the importance of lapis l
 
 
 :: Iraq {"position":"700,600","size":"100,100"}
-(print: "<img src='" + $uri + "'>")
+(print: "<img src='char/iran.jpg'>")
+(print: "<img src='img/plant.jpg'>")
 As we mentioned, In ancient Mesopotamia, lapis lazuli was revered as a sacred gemstone, often used in religious rituals and court decorations. The Sumerians, Babylonians, and Assyrians all utilized lapis lazuli to create statues of gods and amulets. Archaeologists discovered numerous jewelry pieces and ornaments made from lapis lazuli in the royal tombs of Ur, showcasing our ancestors' love and reverence for this gemstone.
 
 In modern times, we use it in various manuscripts(books and documents etc.).
@@ -231,7 +233,7 @@ The homepage offers a brief explanation of the project's aims and general info a
 
 :: Turkey {"position":"875,600","size":"100,100"}
 (print: "<img src='char/turk.jpg'>")
-(print: "<img src='" + $uri + "'>")
+(print: "<img src='img/turkChrist.jpg'>")
 Welcome to Turkey,let us explore the  Byzantine times, . In previous stops, we have seen how color used in Buhddhism and Islamic culture.here,we would explore something different and being very close to our final destination-Italy in Renaissance. 
 This deep blue gemstone traveled via the Silk Road from the distant Badakhshan province of Afghanistan to our land. It has been widely used to adorn churches, create icons, and embellish noble jewelry. The blue of lapis lazuli symbolizes the infinity of heaven and the steadfastness of faith, shining with divine radiance in murals and jewelry.
 
@@ -250,7 +252,7 @@ Lapis lazuli arrived in our land via the Silk Road, bringing with it the mystery
 
 :: Uzbekistan {"position":"450,700","size":"100,100"}
 (print: "<img src='char/uzb.jpg'>")
-(print: "<img src='" + $uri + "'>")
+(print: "<img src='img/Uzbek.jpg'>")
 I am an Uzbek woman from the beautiful city of Samarkand. This ancient city is not only a dazzling gem on the Silk Road but also a crucial witness to our rich cultural and historical heritage. Here, lapis lazuli, the deep blue gemstone, holds a significant and profound history. Today, I want to share with you the story of lapis lazuli in Uzbekistan, particularly in relation to the famous Afrasiab murals.
 The Afrasiab murals, also known as the "Paintings of the Ambassadors," are a rare example of Sogdian art. These murals date back to the middle of the 7th century CE, probably painted between 648 and 651 CE. During this time, the Western Turkic Khaganate was in decline, and the Tang Dynasty's influence was expanding in Central Asia. Amidst this turbulent historical backdrop, lapis lazuli was used as a vital pigment to depict various scenes on the mural s.
 The Afrasiab murals depict scenes from three or four lands neighboring Central Asia on four walls of a room in a private house. On the northern wall, there is a Chinese festival, with the Empress on a boat and the Emperor hunting. The southern wall features Samarkand, showing a religious funerary procession in honor of the ancestors during the Nowruz festival. The eastern wall, although largely destroyed, depicts India as the land of astrologers and pygmies.
